@@ -1,12 +1,19 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import Home from './pages/Home';
+import About from './pages/About';
+import Products from './pages/Products';
+import Error from './pages/Error';
+
 function App() {
   return <BrowserRouter>
     <Routes>
-      <Route path="/" element={<div>Home page</div>} />
-      <Route path="testing" element={<div>
-        <h2>testing</h2>
-      </div>} />
+
+      <Route path="/" element={<Home></Home>} />
+      <Route path="/about" element={<About></About>} />
+      <Route path="/products" element={<Products></Products>} />
+      <Route path="*" element={<Error></Error>} />
+
     </Routes>
   </BrowserRouter>
 }
