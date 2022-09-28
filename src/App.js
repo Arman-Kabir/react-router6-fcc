@@ -7,14 +7,25 @@ import Error from './pages/Error';
 
 function App() {
   return <BrowserRouter>
+    <nav>Our Nav</nav>
     <Routes>
 
-      <Route path="/" element={<Home></Home>} />
-      <Route path="/about" element={<About></About>} />
-      <Route path="/products" element={<Products></Products>} />
-      <Route path="*" element={<Error></Error>} />
+      <Route path="/" element={<Home></Home>} >
+        <Route path="about" element={<About></About>} />
+        <Route path="products" element={<Products></Products>} />
+        <Route path="*" element={<Error></Error>} />
+      </Route>
+
+      <Route path="dashboard" element={<div>Dashboard</div>}>
+        <Route path='stats' element={<div>Stats</div>}></Route>
+
+      </Route>
+
 
     </Routes>
+
+    <footer>Our Footer</footer>
+
   </BrowserRouter>
 }
 
