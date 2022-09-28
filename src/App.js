@@ -4,13 +4,15 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
 import Error from './pages/Error';
+import SharedLayout from './final/pages/SharedLayout';
 
 function App() {
   return <BrowserRouter>
     <nav>Our Nav</nav>
     <Routes>
 
-      <Route path="/" element={<Home></Home>} >
+      <Route path="/" element={<SharedLayout />} >
+        <Route index element={ <Home /> } />
         <Route path="about" element={<About></About>} />
         <Route path="products" element={<Products></Products>} />
         <Route path="*" element={<Error></Error>} />

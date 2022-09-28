@@ -4,7 +4,8 @@ import StyledNavbar from '../components/StyledNavbar';
 const Home = () => {
   return (
     <>
-      <StyledNavbar />
+      {/* <StyledNavbar /> */}
+      <Navbar></Navbar>
       <Outlet />
     </>
   );
