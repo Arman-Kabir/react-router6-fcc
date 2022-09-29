@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import About from './pages/About';
-import Products from './pages/Products';
+import Products from './final/pages/Products';
 import Error from './pages/Error';
 import SharedLayout from './final/pages/SharedLayout';
 import SingleProduct from './final/pages/SingleProduct';
