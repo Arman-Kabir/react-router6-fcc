@@ -6,7 +6,7 @@ const Products = () => {
 
   return (
     <section className='section'>
-      <h2>Productssss</h2>
+      {/* <h2>Productssss</h2> */}
       <div className="products">
         {
           products.map((product) => {
